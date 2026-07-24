@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Backyard Birds - Graphics</title>
+
+<style type="text/css">
+
+
+	#thumbs, #image {
+		width: 700px; border: solid 1px
+		#000;
+		text-align: center;
+		margin: 0 auto 0 auto;
+		color: #000;
+		background: #eee;padding: 5 px;
+	}
+
+	#thumbs {
+		margin-top: 10px;
+	}
+
+			
+	#thumbs img {
+		border: solid 1px #000;
+		margin: 5px;
+	}
+
+	#image{
+		height:400px;
+	}
+
+	.instructions{
+		font-style:italic;
+	}
+
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+	PrintButton1 = new Image
+	PrintButton2 = new Image
+	logo1 = new Image
+	logo2 = new Image
+if (document.images) {
+	PrintButton1.src = "images/print5.gif"
+	PrintButton2.src = "images/print6.gif"
+	logo1.src = "images/logo1.png"
+	logo2.src = "images/logo2.png"
+}
+
+
+		var imgArray = new Array(
+			'image1lg.jpeg',
+			'image2lg.jpeg',
+			'image3lg.jpeg',
+			'image4lg.jpeg'
+			
+
+		);
+
+
+		var titleArray = new Array(
+			'Indigo Bunting',
+			'Stork',
+			'Geese',
+			'Cardinal'
+			
+		);
+			
+		var imgPath = "images/";
+		
+		function swapImage(imgID) {
+
+			var theImage = document.getElementById('theImage');
+			var textDiv = document.getElementById('bottomText');
+
+			var newImg;
+			var textTitle;
+
+			newImg = imgArray[imgID];
+			theImage.src = imgPath + newImg;
+
+			textTitle=titleArray[imgID];
+
+      			textDiv.innerHTML = textTitle;
+		}
+			
+		function preloadImages() {		
+			for(var i = 0; i < imgArray.length; i++) {
+				var tmpImg = new Image;
+				tmpImg.src = imgPath + imgArray[i];
+			}
+		}
+		
+
+</script>
+
+
+</head>
+<body onload="preloadImages()">
+
+	<div align="center">
+
+		<a href="" onmouseover="document.getElementById('print').src='images/print2.png';"
+onmouseout="document.getElementById('print').src='images/print1.png';">
+
+<img src="images/print1.png" alt="Print Page" width="200" height="50"
+id="print"></a>
+
+</div>
+
+
+<div align="center">
+	<a href=""
+onmouseover="document.getElementById('logo').src='images/Bird_Logo2.png';"
+onmouseout="document.getElementById('logo').src='images/Bird_Logo.png';">
+	<img src="images/Bird_Logo.png" alt="Logo" id="logo"></a>
+
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
+
+<div id="thumbs">
+		<img src="images/image1sm.jpeg" alt="Indigo Bunting" onmouseover="swapImage(0);" />
+		<img src="images/image2sm.jpeg" alt="Two hunting Dogs" onmouseover="swapImage(1);" />
+		<img src="images/image3sm.jpeg" alt="Dog and two kids" onmouseover="swapImage(2);" />
+		<img src="images/image4sm.jpeg" alt="Woman and Dog" onmouseover="swapImage(3);" />
+		
+</div>
+
+	<div id="image">
+
+		<img id="theImage" src="images/image1lg.jpeg" alt="Indigo Bunting" />
+		<h3 id="bottomText">Indigo Bunting</h3>
+	</div>
+
+<img src="images/2colback.jpeg">
+
+<br />
+<br />
+<br />
+<br />
+
+
+
+</div>
+
+<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+</p>
+  
+
+</body>
+</html>
