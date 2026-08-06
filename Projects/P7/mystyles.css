@@ -1,0 +1,157 @@
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;        
+}
+
+body {
+        background-color: #edd9ca;
+        color: #171717;
+        font-family: "Lato", sans-serif;
+        font-size: medium;
+        font-style: normal;
+        line-height: 1.5;
+
+    }
+
+header {
+    background-color: #c9b5a5;
+    width: 900px;
+    height: 225px;
+}
+
+section {
+    background-image: url("images/2colback.jpeg");
+    background-repeat: repeat-y;
+    min-height: 600px
+}
+
+article{
+    width: 800px;
+}
+
+h1{
+        background-color: #0b1f52;
+        color: #c9b5a5;
+    }
+
+h2{
+        color: #000000;
+    }
+
+nav{
+  width: 30%;
+  float: right;
+}
+
+a:link{
+        background-color: #122f6e;
+        color: #d1c2b4;
+        text-decoration: none;
+    }
+
+a:hover{
+        color:#edd9ca;
+    }
+
+a:visited{
+        color:#a3978c;
+    }
+    
+.RightTitleImage{
+        float:right;
+		padding-left:10px;
+				
+    }
+
+.LeftParagraphImage{
+        float:left;
+        padding-right:10px;
+    }
+
+
+   /* ------ TABLE STYLE ------- */
+
+table{
+        border-collapse: collapse;
+        width: 700px, 100%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+        color:#000000
+
+        
+    }
+
+th, td{
+        padding-left:10px;
+        padding-right:10px;
+        padding-top:3px;
+        padding-bottom:3px;
+    }
+    
+.birds_table{
+        text-align: left;
+
+    }
+
+.months_table{
+        text-align: right;
+    }
+
+.years_table{
+        text-align: right;
+    }
+
+.heading_table{
+        background-color:#0b1f52;
+        text-align: center;
+        color:#ffffff;
+        font-size:large
+    }
+
+.table_color1{
+        background-color:#a2b3e0;
+        padding:3px;
+    }
+
+.table_color2{
+        background-color: #bdc6de;
+    }
+
+caption{
+        font-weight: bolder;
+        font-size:larger;
+        text-align:left;
+        padding: 5px;       
+    }
+
+
+
+
+    	#thumbs, #image {
+		width: 700px; border: solid 1px
+		#000;
+		text-align: center;
+		margin: 0 auto 0 auto;
+		color: #000;
+		background: #eee;padding: 5 px;
+	}
+
+	#thumbs {
+		margin-top: 10px;
+	}
+
+			
+	#thumbs img {
+		border: solid 1px #000;
+		margin: 5px;
+	}
+
+	#image{
+		height:400px;
+	}
+
+	.instructions{
+		font-style:italic;
+	}

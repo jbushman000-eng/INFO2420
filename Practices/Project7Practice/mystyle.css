@@ -12,7 +12,8 @@ body {
 header{
     width: 760px;
     height: 150px;
-    background-color:#CCCCCC; text-align: center;
+    background-color:#CCCCCC; 
+    text-align: center;
     padding-top: 10px;
     border: dashed medium navy;
     margin: auto;
@@ -45,7 +46,7 @@ footer{
     text-align: center;
     width: 760px;
     height: 70px;
-    border: deashed medium navy;
+    border: dashed medium navy;
     background-color: #CCCCCC;
     margin: auto;
 }
